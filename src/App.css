@@ -1,38 +1,155 @@
-.App {
-  text-align: center;
+* {
+  padding: 0;
+  margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600|Nunito:400,600,700');
+body {
+  font-family: 'Nunito', sans-serif;
+  overflow-x: hidden;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Montserrat', sans-serif;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+a,
+a:hover,
+a:focus,
+button,
+button:focus {
+  text-decoration: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+ul{
+  list-style: none;
+}
+ul li{
+  padding: 10px;
+}
+
+
+/* header area */
+
+.header-area {
+  background: url("https://cdn.pixabay.com/photo/2016/11/29/02/05/audience-1866738_960_720.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.header-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+/* main background  */
+
+.background {
+  background-color: #0E0A2A;
+}
+
+.single-league {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background-color: white;
+  margin: 10px;
+  padding: 10px;
+}
+
+.league-logo {
+  height: 150px;
+  width: 200px;
+}
+
+.league-logo img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.league-details {
+  padding-top: 20px;
+}
+
+.league-details p {
+  margin-bottom: 0;
+}
+
+.league-name {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.league-about {
+  font-size: 15px;
+}
+
+.explore {
+  border: none !important;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #3A42FF;
   color: white;
+  margin-top: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+
+/* 2nd html section */
+
+.header-another {
+  background-color: rgba(255, 255, 255, 0.549)!important;
+}
+.header-second{
+  position: relative;
+}
+.header-league img{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 200px;
+  z-index: 999;
+  transform: translate(-50%, -50%);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+/* another page main option  */
+.league-details{}
+.all-details{
+  background-color: #3A42FF;
+  border-radius: 5px;
+  padding: 20px;
+}
+.name{}
+.name p{
+  font-size: 20px;
+  font-weight: 700;
+}
+.foundation{}
+.foundation .icon{
+  padding-right: 10px;
+}
+.foundation .icon img{
+  width: 20px;
+}
+.icon-detail{
+  font-size: 15px;
 }
