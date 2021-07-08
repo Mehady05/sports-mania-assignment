@@ -14,7 +14,7 @@ const ListLeague = (props) => {
         .then(data => {
             setImg(data.leagues[0])
         })
-    },[])
+    },[idLeague])
 
 
 
